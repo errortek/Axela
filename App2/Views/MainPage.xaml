@@ -8,14 +8,14 @@
     NavigationCacheMode="Required">
 
     <Grid x:Name="ContentArea">
-        <TextBlock Text="Welcome, User" FontFamily="Segoe UI Semibold" x:Name="text1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Grid x:Name="AxelaResponses" Background="{ThemeResource SystemAccentColor}" VerticalAlignment="Top">
+        <!--<TextBlock Text="Welcome, User" FontFamily="Segoe UI Semibold" x:Name="text1" HorizontalAlignment="Left" VerticalAlignment="Top"/>-->
+        <Grid x:Name="AxelaResponses" Background="{ThemeResource SystemAccentColor}" VerticalAlignment="Top" CornerRadius="8" Padding="8">
             <TextBlock x:Name="AxelaResponseText"/>
         </Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Center">
             <TextBox PlaceholderText="Type here to talk to Axela! ;D" x:Name="axelabox"/>
             <Button Style="{ThemeResource AccentButtonStyle}" Content="Submit" Click="Button_Click"/>
-            <TextBlock Text="this is for internal testing :D :D" x:Name="tester"/>
+            <TextBlock Text="this textbox is meant for internal testing; to see if the commands are being parsed properly :D :D" x:Name="tester"/>
         </StackPanel>
     </Grid>
 </Page>

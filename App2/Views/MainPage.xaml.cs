@@ -47,6 +47,6 @@ public sealed partial class MainPage : Page
         string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
 
 
-        text1.Text = "Welcome, " + userName;
+        //text1.Text = "Welcome, " + userName;
     }
 }
