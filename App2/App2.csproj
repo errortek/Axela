@@ -14,6 +14,7 @@
 	<UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+    <AssemblyName>Axela</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
