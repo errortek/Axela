@@ -25,6 +25,7 @@ public sealed partial class MainPage : Page
     {
         AxelaText = axelabox.Text;
         tester.Text = AxelaText;
+        AxelaText = AxelaText.ToLower();
         processText();
     }
 
