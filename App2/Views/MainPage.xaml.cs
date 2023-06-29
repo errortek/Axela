@@ -38,6 +38,24 @@ public sealed partial class MainPage : Page
                     string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
                     AxelaResponseText.Text = "Hello, " + userName;
                 }
+                if (AxelaText.Contains("who is your developer"))
+                {
+                    AxelaResponseText.Text = "My developer is jpb, sometimes referred to as jpbandroid :D";
+                }
+                if (AxelaText.Contains("bye"))
+                {
+                    string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+                    AxelaResponseText.Text = "Bye! :D\nHave a nice day, " + userName;
+                }
+                if (AxelaText.Contains("it's my birthday"))
+                {
+                    string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+                    AxelaResponseText.Text = "Happy birthday, " + userName;
+                }
+                if (AxelaText.Contains("what's the time"))
+                {
+                    AxelaResponseText.Text = "The time right now is: " + DateTime.Now.ToString();
+                }
             }
         }
     }
