@@ -15,7 +15,7 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <AssemblyName>Axela Beta</AssemblyName>
-    <Version>11.2306.29.0-beta</Version>
+    <Version>11.2306.30.0-beta</Version>
     <Title>Axela</Title>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
