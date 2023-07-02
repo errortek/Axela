@@ -1,6 +1,4 @@
 ﻿using App2.ViewModels;
-using LinqToWiki;
-using LinqToWiki.Generated;
 using Microsoft.UI.Xaml.Controls;
 using Windows.Media.PlayTo;
 using Windows.Security.Cryptography.Core;

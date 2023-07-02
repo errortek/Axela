@@ -33,9 +33,8 @@
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
-    <PackageReference Include="LinqToWiki" Version="1.5.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.3.230602002" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0-preview.5.23280.8" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.230518007-experimental1" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.9" />
     <PackageReference Include="WinUIEx" Version="2.2" />
   </ItemGroup>
