@@ -17,4 +17,10 @@ public sealed partial class SettingsPage : Page
         ViewModel = App.GetService<SettingsViewModel>();
         InitializeComponent();
     }
+
+    private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+        SysBackdropTest sysbackdropwindow = new SysBackdropTest();
+        sysbackdropwindow.Show();
+    }
 }
