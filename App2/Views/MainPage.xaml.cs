@@ -1,11 +1,14 @@
 ﻿using App2.ViewModels;
-
+using LinqToWiki;
+using LinqToWiki.Generated;
 using Microsoft.UI.Xaml.Controls;
+using Windows.Media.PlayTo;
+using Windows.Security.Cryptography.Core;
 using Windows.System;
 
 namespace App2.Views;
 
-public sealed partial class MainPage : Page
+public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
 {
     private string AxelaText;
 
@@ -18,7 +21,6 @@ public sealed partial class MainPage : Page
     {
         ViewModel = App.GetService<MainViewModel>();
         InitializeComponent();
-
     }
 
     private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
@@ -56,6 +58,20 @@ public sealed partial class MainPage : Page
                 if (AxelaText.Contains("what's the time"))
                 {
                     AxelaResponseText.Text = "The time right now is: " + DateTime.Now.ToString();
+                }
+                if (AxelaText.Contains("get")) {
+                    if (AxelaText.Contains("from wikipedia"))
+                    {
+                        string WikiArticle = string.Empty;
+                        AxelaText = WikiArticle;
+                        WikiArticle.Replace("get ", "");
+                        WikiArticle.Replace("from wikipedia", "");
+
+                    }
+                }
+                if (AxelaText.Contains("how are you"))
+                {
+                    AxelaResponseText.Text = "I'm great! :D\nBut I don't really have feelings, as I am an AI chatbot";
                 }
             }
         }
