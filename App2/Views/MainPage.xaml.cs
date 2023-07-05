@@ -1,4 +1,6 @@
-﻿using System.Net;
+﻿using System.Diagnostics;
+using System.Net;
+using System.Reflection;
 using App2.ViewModels;
 using Microsoft.UI.Xaml.Controls;
 using Newtonsoft.Json;
@@ -63,23 +65,34 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
                 if (AxelaText.Contains("get")) {
                     if (AxelaText.Contains("from wikipedia"))
                     {
-                        string WikiArticle = string.Empty;
-                        AxelaText = WikiArticle;
-                        WikiArticle.Replace("get ", "");
-                        WikiArticle.Replace("from wikipedia", "");
-                        WebClient client = new WebClient();
+                        //string WikiArticle = string.Empty;
+                        //AxelaText = WikiArticle;
+                        //WikiArticle.Replace("get ", "");
+                        //WikiArticle.Replace("from wikipedia", "");
+                        //WebClient client = new WebClient();
 
-                        using (Stream stream = client.OpenRead("http://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&explaintext=1&titles=stack%20overflow"))
-                        using (StreamReader reader = new StreamReader(stream))
-                        {
-                            JsonSerializer ser = new JsonSerializer();
-                            Result result = ser.Deserialize<Result>(new JsonTextReader(reader));
+                        //using (Stream stream = client.OpenRead("http://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&explaintext=1&titles=stack%20overflow"))
+                        //using (StreamReader reader = new StreamReader(stream))
+                        //{
+                        //    JsonSerializer ser = new JsonSerializer();
+                        //    Result result = ser.Deserialize<Result>(new JsonTextReader(reader));
 
-                            foreach (Page page in result.query.pages.Values)
-                                Console.WriteLine(page.extract);
-                                
-                        }
-                        
+                        //    foreach (Page page in result.query.pages.Values)
+                        //        Console.WriteLine(page.extract);
+
+                        //}
+
+                        // This is the path for the "LocalState" folder.
+                        string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
+                        Process P = new();
+                        P.StartInfo.UseShellExecute = true;
+                        P.StartInfo.Verb = "runas";
+                        P.StartInfo.FileName = $@"{directory}\axela_wiki.exe";
+                        P.StartInfo.Arguments = "";
+                        P.Start();
+                        AxelaResponseText.Text = "Please input any queries from Wikipedia into the textbox of the new app window";
+
                     }
                 }
                 if (AxelaText.Contains("how are you"))
