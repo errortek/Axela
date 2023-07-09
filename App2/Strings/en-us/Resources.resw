@@ -175,7 +175,7 @@ Additionally, new features like TTS output and STT input are planned to be added
   <data name="currback.Text" xml:space="preserve">
     <value>Current backdrop: </value>
   </data>
-  <data name="LangWarning.Text" xml:space="preserve">
+  <data name="LangWarning.Message" xml:space="preserve">
     <value>Axela (the AI model) is only available in English for now. Please input data in English, not in any other language, as Axela's query detection system and responses will be updated in a later release.</value>
   </data>
   <data name="LangWarning.Title" xml:space="preserve">

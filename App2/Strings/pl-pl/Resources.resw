@@ -124,22 +124,22 @@
     <value>Axela</value>
   </data>
   <data name="Shell_Main.Content" xml:space="preserve">
-    <value>Axela AI Chat</value>
+    <value>Czat AI Axela</value>
   </data>
   <data name="Settings_Personalization.Text" xml:space="preserve">
-    <value>Personalization</value>
+    <value>Personalizacja</value>
   </data>
   <data name="Settings_Theme.Text" xml:space="preserve">
-    <value>Theme</value>
+    <value>Motyw</value>
   </data>
   <data name="Settings_Theme_Light.Content" xml:space="preserve">
-    <value>Light</value>
+    <value>Jasny</value>
   </data>
   <data name="Settings_Theme_Dark.Content" xml:space="preserve">
-    <value>Dark</value>
+    <value>Ciemny</value>
   </data>
   <data name="Settings_Theme_Default.Content" xml:space="preserve">
-    <value>Default</value>
+    <value>Domyślny</value>
   </data>
   <data name="Settings_About.Text" xml:space="preserve">
     <value>O tej aplikacji</value>
@@ -150,7 +150,7 @@ Są plany żeby stworzyć wersję (port) na Androida i inne nakładki oprogramow
 Dodatkowo, nowe funkcje tak jak input STT (speech-to-text) i output TTS (text-to-speech/synteza mowy) są planowane żeby było łatwiej używać Axelę i żeby upozycjonować Axelę jako prawdziwy czatbot AI i personalny asystent.</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
-    <value>Privacy Statement</value>
+    <value>Prywatność</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
     <value>https://YourPrivacyUrlGoesHere/</value>
@@ -185,7 +185,7 @@ Dodatkowo, nowe funkcje tak jak input STT (speech-to-text) i output TTS (text-to
     <value>Ustawienia</value>
   </data>
   <data name="Submit.Content" xml:space="preserve">
-    <value>Submit</value>
+    <value />
   </data>
   <data name="axelabox.PlaceholderText" xml:space="preserve">
     <value>Pisz tutaj żeby komunikować się z Axelą! ;D</value>
