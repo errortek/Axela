@@ -40,29 +40,29 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         {
             if (AxelaText.Length > 0)
             {
-                if (AxelaText.Contains("hello")) {
+                if (AxelaText.Contains("hello") || AxelaText.Contains("hi") || AxelaText.Contains("hii")) {
                     string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
                     AxelaResponseText.Text = "Hello, " + userName;
                 }
-                if (AxelaText.Contains("who is your developer"))
+                else if (AxelaText.Contains("who is your developer"))
                 {
                     AxelaResponseText.Text = "My developer is jpb, sometimes referred to as jpbandroid :D";
                 }
-                if (AxelaText.Contains("bye"))
+                else if (AxelaText.Contains("bye"))
                 {
                     string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
                     AxelaResponseText.Text = "Bye! :D\nHave a nice day, " + userName;
                 }
-                if (AxelaText.Contains("it's my birthday"))
+                else if (AxelaText.Contains("it's my birthday"))
                 {
                     string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
                     AxelaResponseText.Text = "Happy birthday, " + userName;
                 }
-                if (AxelaText.Contains("what's the time"))
+                else if (AxelaText.Contains("what's the time"))
                 {
                     AxelaResponseText.Text = "The time right now is: " + DateTime.Now.ToString();
                 }
-                if (AxelaText.Contains("get")) {
+                else if (AxelaText.Contains("get")) {
                     if (AxelaText.Contains("from wikipedia"))
                     {
                         //string WikiArticle = string.Empty;
@@ -95,9 +95,21 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
 
                     }
                 }
-                if (AxelaText.Contains("how are you"))
+                else if (AxelaText.Contains("how are you"))
                 {
                     AxelaResponseText.Text = "I'm great! :D\nBut I don't really have feelings, as I am an AI chatbot";
+                }
+                else if (AxelaText.Contains("axela, axela"))
+                {
+                    AxelaResponseText.Text = "Hey there, I see you're repeating my name...";
+                }
+                else if (AxelaText.Contains("cortana"))
+                {
+                    AxelaResponseText.Text = "...\ncoming soon\n...";
+                }
+                else
+                {
+                    AxelaResponseText.Text = "Sorry, I couldn't find any response to your command! :(\nMaybe update the app to its latest version and then try again?";
                 }
             }
         }
