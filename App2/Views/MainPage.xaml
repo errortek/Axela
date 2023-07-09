@@ -13,8 +13,8 @@
             <TextBlock x:Name="AxelaResponseText"/>
         </Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Center">
-            <TextBox PlaceholderText="Type here to talk to Axela! ;D" x:Name="axelabox"/>
-            <Button Style="{ThemeResource AccentButtonStyle}" Content="Submit" Click="Button_Click" x:Name="Submit"/>
+            <TextBox PlaceholderText="Type here to talk to Axela! ;D" x:Name="axelabox" x:Uid="axelabox"/>
+            <Button Style="{ThemeResource AccentButtonStyle}" Content="Submit" Click="Button_Click" x:Name="Submit" x:Uid="Submit"/>
             <TextBlock Text="this textbox is meant for internal testing; to see if the commands are being parsed properly :D :D" x:Name="tester"/>
         </StackPanel>
     </Grid>

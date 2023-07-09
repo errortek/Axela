@@ -22,11 +22,12 @@
             VerticalAlignment="Center"
             Spacing="12">
             <TextBlock HorizontalAlignment="Center">
-                <Run Text="Current backdrop: " x:Name="currback"/>
+                <Run Text="Current backdrop: " x:Name="currback" x:Uid="currback"/>
                 <Run x:Name="tbCurrentBackdrop" FontWeight="SemiBold" />
             </TextBlock>
             <Button
                 x:Name="btnChangeBackdrop"
+                x:Uid="btnChangeBackdrop"
                 HorizontalAlignment="Center"
                 Click="ChangeBackdropButton_Click"
                 Content="Change Backdrop" />
