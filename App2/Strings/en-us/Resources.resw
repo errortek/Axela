@@ -169,10 +169,10 @@ Additionally, new features like TTS output and STT input are planned to be added
   &lt;/actions&gt;
 &lt;/toast&gt;</value>
   </data>
-  <data name="ChangeBackdrop" xml:space="preserve">
+  <data name="btnChangeBackdrop.Content" xml:space="preserve">
     <value>Change Backdrop</value>
   </data>
-  <data name="CurrentBackdrop" xml:space="preserve">
+  <data name="currback.Text" xml:space="preserve">
     <value>Current backdrop: </value>
   </data>
   <data name="LangWarning.Text" xml:space="preserve">
@@ -184,10 +184,10 @@ Additionally, new features like TTS output and STT input are planned to be added
   <data name="Settings.Content" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="Submit" xml:space="preserve">
+  <data name="Submit.Content" xml:space="preserve">
     <value>Submit</value>
   </data>
-  <data name="TypeHere" xml:space="preserve">
+  <data name="axelabox.PlaceholderText" xml:space="preserve">
     <value>Type here to talk to Axela! ;D</value>
   </data>
 </root>

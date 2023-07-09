@@ -22,7 +22,7 @@
             VerticalAlignment="Center"
             Spacing="12">
             <TextBlock HorizontalAlignment="Center">
-                <Run Text="Current backdrop: " />
+                <Run Text="Current backdrop: " x:Name="currback"/>
                 <Run x:Name="tbCurrentBackdrop" FontWeight="SemiBold" />
             </TextBlock>
             <Button
