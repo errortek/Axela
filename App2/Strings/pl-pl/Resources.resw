@@ -185,7 +185,7 @@ Dodatkowo, nowe funkcje tak jak input STT (speech-to-text) i output TTS (text-to
     <value>Ustawienia</value>
   </data>
   <data name="Submit.Content" xml:space="preserve">
-    <value />
+    <value>Wyślij do Axeli</value>
   </data>
   <data name="axelabox.PlaceholderText" xml:space="preserve">
     <value>Pisz tutaj żeby komunikować się z Axelą! ;D</value>
