@@ -63,11 +63,18 @@
                     DefaultHeader="{x:Bind ((ContentControl)ViewModel.Selected).Content, Mode=OneWay}">
                     <behaviors:NavigationViewHeaderBehavior.DefaultHeaderTemplate>
                         <DataTemplate>
-                            <Grid>
+                            <StackPanel>
                                 <TextBlock
                                     Text="{Binding}"
                                     Style="{ThemeResource TitleTextBlockStyle}" />
-                            </Grid>
+                                <InfoBar
+    IsOpen="True"
+    Severity="Warning"
+    Title="Title"
+                IsClosable="True"
+    Message="Essential app message for your users to be informed of, acknowledge, or take action on." 
+                x:Name="LangWarning" x:Uid="LangWarning"/>
+                            </StackPanel>
                         </DataTemplate>
                     </behaviors:NavigationViewHeaderBehavior.DefaultHeaderTemplate>
                 </behaviors:NavigationViewHeaderBehavior>
