@@ -142,12 +142,12 @@
     <value>Default</value>
   </data>
   <data name="Settings_About.Text" xml:space="preserve">
-    <value>About this application</value>
+    <value>O tej aplikacji</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>Axela is an AI chatbot for Windows, that is NOT dependent on ChatGPT in any way - Axela is its own, unique chatbot (one of the main reasons why there aren't much commands yet)
-There are plans to port Axela to Android and AOSP-based custom ROMs, such as jpbROM, where it will probably be preinstalled (jpbROM is my custom rom)
-Additionally, new features like TTS output and STT input are planned to be added for ease of use and to put Axela up as a true AI chatbot and personal assistant.</value>
+    <value>Axela jest czatbotem AI dla Windows, który NIE jest oparty na ChatGPT - Axela jest swoim własnym, unikalnym chatbotem (jeden z powodów dlaczego nie ma jeszcze dużo komend)
+Są plany żeby stworzyć wersję (port) na Androida i inne nakładki oprogramowania bazowane na kodzie AOSP, jak jpbROM. gdzie będzie pewnie zainstalowane jako aplikacja fabryczna/systemowa. (jpbROM jest moim oprogramowaniem bazowanym na AOSP)
+Dodatkowo, nowe funkcje tak jak input STT (speech-to-text) i output TTS (text-to-speech/synteza mowy) są planowane żeby było łatwiej używać Axelę i żeby upozycjonować Axelę jako prawdziwy czatbot AI i personalny asystent.</value>
   </data>
   <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
     <value>Privacy Statement</value>
@@ -170,24 +170,24 @@ Additionally, new features like TTS output and STT input are planned to be added
 &lt;/toast&gt;</value>
   </data>
   <data name="btnChangeBackdrop.Content" xml:space="preserve">
-    <value>Change Backdrop</value>
+    <value>Zmień Tło</value>
   </data>
   <data name="currback.Text" xml:space="preserve">
-    <value>Current backdrop: </value>
+    <value>Aktualne tło: </value>
   </data>
-  <data name="LangWarning.Text" xml:space="preserve">
-    <value>Axela (the AI model) is only available in English for now. Please input data in English, not in any other language, as Axela's query detection system and responses will be updated in a later release.</value>
+  <data name="LangWarning.Message" xml:space="preserve">
+    <value>Axela (model AI) jest dostępna na razie tylko w języku angielskim. Proszę wpisywać dane w angielskim, nie w innym języku (np. polskim), bo system detekcji komend i odpowiedzi będzie zaktualizowany w późniejszej wersji.</value>
   </data>
   <data name="LangWarning.Title" xml:space="preserve">
-    <value>Axela (the AI model) is only available in English for now</value>
+    <value>Axela (model AI) jest dostępna na razie tylko w języku angielskim.</value>
   </data>
   <data name="Settings.Content" xml:space="preserve">
-    <value>Settings</value>
+    <value>Ustawienia</value>
   </data>
   <data name="Submit.Content" xml:space="preserve">
     <value>Submit</value>
   </data>
   <data name="axelabox.PlaceholderText" xml:space="preserve">
-    <value>Type here to talk to Axela! ;D</value>
+    <value>Pisz tutaj żeby komunikować się z Axelą! ;D</value>
   </data>
 </root>
