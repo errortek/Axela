@@ -12,9 +12,11 @@
         <Grid x:Name="AxelaResponses" Background="{ThemeResource SystemAccentColor}" VerticalAlignment="Top" CornerRadius="8" Padding="8">
             <TextBlock x:Name="AxelaResponseText"/>
         </Grid>
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Center">
-            <TextBox PlaceholderText="Type here to talk to Axela! ;D" x:Name="axelabox" x:Uid="axelabox"/>
-            <Button Style="{ThemeResource AccentButtonStyle}" Content="Submit" Click="Button_Click" x:Name="Submit" x:Uid="Submit"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Spacing="8" x:Name="stack"  Width="{Binding ActualWidth, ElementName=ContentArea}">
+            <RelativePanel HorizontalAlignment="Right" x:Name="relativepanel" Width="{Binding ActualWidth, ElementName=stack}">
+                <TextBox PlaceholderText="Type here to talk to Axela! ;D" x:Name="axelabox" x:Uid="axelabox" RelativePanel.LeftOf="Submit" RelativePanel.AlignLeftWithPanel="True"/>
+                <Button Style="{ThemeResource AccentButtonStyle}" Content="Submit" Click="Button_Click" x:Name="Submit" x:Uid="Submit" RelativePanel.AlignRightWithPanel="True"/>
+            </RelativePanel>
             <TextBlock Text="this textbox is meant for internal testing; to see if the commands are being parsed properly :D :D" x:Name="tester"/>
         </StackPanel>
     </Grid>
