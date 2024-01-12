@@ -73,7 +73,7 @@
     Title="Title"
                 IsClosable="True"
     Message="Essential app message for your users to be informed of, acknowledge, or take action on." 
-                x:Name="LangWarning" x:Uid="LangWarning"/>
+                x:Name="LangWarning" x:Uid="LangWarning" Margin="8"/>
                             </StackPanel>
                         </DataTemplate>
                     </behaviors:NavigationViewHeaderBehavior.DefaultHeaderTemplate>

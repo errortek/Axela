@@ -9,15 +9,14 @@
 
     <Grid x:Name="ContentArea">
         <!--<TextBlock Text="Welcome, User" FontFamily="Segoe UI Semibold" x:Name="text1" HorizontalAlignment="Left" VerticalAlignment="Top"/>-->
-        <Grid x:Name="AxelaResponses" Background="{ThemeResource SystemAccentColor}" VerticalAlignment="Top" CornerRadius="8" Padding="8">
-            <TextBlock x:Name="AxelaResponseText"/>
+        <Grid x:Name="AxelaResponses" Background="{ThemeResource AccentFillColorDefaultBrush}" VerticalAlignment="Top" CornerRadius="8" Padding="8">
+            <TextBlock x:Name="AxelaResponseText" Foreground="{ThemeResource TextOnAccentFillColorPrimaryBrush}"/>
         </Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Spacing="8" x:Name="stack"  Width="{Binding ActualWidth, ElementName=ContentArea}">
             <RelativePanel HorizontalAlignment="Right" x:Name="relativepanel" Width="{Binding ActualWidth, ElementName=stack}">
-                <TextBox KeyDown="axelabox_KeyDown" PlaceholderText="Type here to talk to Axela! ;D" x:Name="axelabox" x:Uid="axelabox" RelativePanel.LeftOf="Submit" RelativePanel.AlignLeftWithPanel="True"/>
-                <Button Style="{ThemeResource AccentButtonStyle}" Content="Submit" Click="Button_Click" x:Name="Submit" x:Uid="Submit" RelativePanel.AlignRightWithPanel="True"/>
+                <TextBox KeyDown="axelabox_KeyDown" PlaceholderText="Type here to talk to Axela! ;D" x:Name="axelabox" x:Uid="axelabox" RelativePanel.LeftOf="Submit" RelativePanel.AlignLeftWithPanel="True" Margin="8"/>
+                <Button Style="{ThemeResource AccentButtonStyle}" Content="Submit" Click="Button_Click" x:Name="Submit" x:Uid="Submit" RelativePanel.AlignRightWithPanel="True" Margin="8"/>
             </RelativePanel>
-            <TextBlock Text="this textbox is meant for internal testing; to see if the commands are being parsed properly :D :D" x:Name="tester" Visibility="Collapsed"/>
         </StackPanel>
     </Grid>
 </Page>
