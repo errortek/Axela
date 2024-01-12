@@ -47,7 +47,12 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         "Search for ... on Wikipedia",
         "How are you?",
         "Axela, Axela",
-        "Cortana"
+        "Cortana",
+        "What's today's date?",
+        "What day is it right now?",
+        "What's the date?",
+        "What is the date today?", 
+        "What OS is this computer running?"
     };
 
     public bool isRequestingWikipedia = false;
@@ -63,7 +68,12 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         "Please input your search query...",
         "I'm good. What about you? 😊",
         "I see that you're repeating my name. Is there something specific you would like to talk about? 😊",
-        "Rest in peace to Cortana..."
+        "Rest in peace to Cortana...",
+        $"The date right now is {DateTime.Now.ToString("dd.M.yyyy")}",
+        $"Today is {DateTime.Now.ToString("dddd")}",
+        $"The date right now is {DateTime.Now.ToString("dd.M.yyyy")}",
+        $"The date right now is {DateTime.Now.ToString("dd.M.yyyy")}",
+        $"This computer is running {Environment.OSVersion}"
     };
 
     private async Task ProcessSmartAnswer()
