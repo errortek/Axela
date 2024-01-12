@@ -1,6 +1,7 @@
 ﻿using App2.ViewModels;
 
 using Microsoft.UI.Xaml.Controls;
+using Windows.ApplicationModel.DataTransfer;
 
 namespace App2.Views;
 
@@ -22,5 +23,17 @@ public sealed partial class SettingsPage : Page
     {
         SysBackdropTest sysbackdropwindow = new SysBackdropTest();
         sysbackdropwindow.Show();
+    }
+
+    private void CopyVerInfo(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+        var data = new DataPackage
+        {
+            RequestedOperation = DataPackageOperation.Copy
+        };
+        data.SetText(aboutblock.Header + " version " + aboutblock.Description);
+
+        Clipboard.SetContentWithOptions(data, new ClipboardContentOptions() { IsAllowedInHistory = true, IsRoamable = true });
+        Clipboard.Flush();
     }
 }
