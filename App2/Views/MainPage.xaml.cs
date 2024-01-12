@@ -107,6 +107,8 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         {
             isRequestingWikipedia = true;
         }
+
+        axelabox.Text = string.Empty;
     }
 
     private async void ProcessAnswer()
@@ -219,6 +221,18 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         public string extract
         {
             get; set;
+        }
+    }
+
+    private async void axelabox_KeyDown(object sender, Microsoft.UI.Xaml.Input.KeyRoutedEventArgs e)
+    {
+        if (e.Key == VirtualKey.Enter)
+        {
+            AxelaText = axelabox.Text;
+            tester.Text = AxelaText;
+            AxelaText = AxelaText.ToLower();
+            //ProcessAnswer();
+            await ProcessSmartAnswer();
         }
     }
 }
