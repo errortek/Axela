@@ -17,7 +17,7 @@
                 <TextBox PlaceholderText="Type here to talk to Axela! ;D" x:Name="axelabox" x:Uid="axelabox" RelativePanel.LeftOf="Submit" RelativePanel.AlignLeftWithPanel="True"/>
                 <Button Style="{ThemeResource AccentButtonStyle}" Content="Submit" Click="Button_Click" x:Name="Submit" x:Uid="Submit" RelativePanel.AlignRightWithPanel="True"/>
             </RelativePanel>
-            <TextBlock Text="this textbox is meant for internal testing; to see if the commands are being parsed properly :D :D" x:Name="tester"/>
+            <TextBlock Text="this textbox is meant for internal testing; to see if the commands are being parsed properly :D :D" x:Name="tester" Visibility="Collapsed"/>
         </StackPanel>
     </Grid>
 </Page>
