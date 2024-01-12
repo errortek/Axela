@@ -26,7 +26,7 @@ public class AppNotificationService : IAppNotificationService
     {
         AppNotificationManager.Default.NotificationInvoked += OnNotificationInvoked;
 
-        AppNotificationManager.Default.Register();
+        //AppNotificationManager.Default.Register();
     }
 
     public void OnNotificationInvoked(AppNotificationManager sender, AppNotificationActivatedEventArgs args)
