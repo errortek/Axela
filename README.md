@@ -12,3 +12,6 @@ An AI chatbot to help you with anything!! 😄
 Since Axela in an Installer kept crashing, I decided to distribute it as a zip file.
 You have to extract the zip file and then run Axela by running Axela Beta.exe (if on Betas) or Axela.exe (if on Stable).
 You can also manually create a desktop and start menu shortcut.
+
+### Statistics
+![Alt](https://repobeats.axiom.co/api/embed/9e04a3a7c98aa420b00d5c635bc1e6180a259426.svg "Repobeats analytics image")
