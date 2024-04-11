@@ -9,8 +9,8 @@ An AI chatbot to help you with anything!! 😄
 
 
 ### How to install
-Since Axela in an Installer kept crashing, I decided to distribute it as a zip file.
-You have to extract the zip file and then run Axela by running Axela Beta.exe (if on Betas) or Axela.exe (if on Stable).
+Since Axela's installed kept crashing, I decided to distribute it as a zip file.
+You have to extract the zip file and then run Axela by running Axela Beta.exe (if you want to use the beta version) or Axela.exe (if you want to use the stable version).
 You can also manually create a desktop and start menu shortcut.
 
 ### Statistics
