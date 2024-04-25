@@ -54,7 +54,7 @@ public class AppNotificationService : IAppNotificationService
     {
         var appNotification = new AppNotification(payload);
 
-        AppNotificationManager.Default.Show(appNotification);
+        //AppNotificationManager.Default.Show(appNotification);
 
         return appNotification.Id != 0;
     }
