@@ -63,7 +63,7 @@
 
                     <controls1:SettingsCard x:Name="aboutblock"
             Header="Axela"
-            Description="11.2401.2.0">
+            Description="11.2404.1.0">
                         <controls1:SettingsCard.HeaderIcon>
                             <BitmapIcon UriSource="/Assets/WindowIcon.ico" ShowAsMonochrome="False" Height="24" Width="24"/>
                         </controls1:SettingsCard.HeaderIcon>
