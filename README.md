@@ -9,9 +9,11 @@ An AI chatbot to help you with anything!! 😄
 
 
 ### How to install
-Since Axela's installer kept crashing, I decided to distribute it as a zip file. (Will be fixed in next version however, as I recently found a solution)
+#### If you want to get versions 11.2401.1.0 and earlier:
 You have to extract the zip file and then run Axela by running Axela Beta.exe (if you want to use the beta version) or Axela.exe (if you want to use the stable version).
 You can also manually create a desktop and start menu shortcut.
+#### If you want to get versions 11.2404.1.0 and later:
+Download AxelaSetup.exe from Releases and run it, proceeding through the steps in the Setup. It will install Axela for you, unlike in the earlier method, and you can launch Axela automatically after the installation has finished. This method automatically creates a start menu shortcut and gives you the option to create a desktop shortcut.
 
 ### Statistics
 ![Alt](https://repobeats.axiom.co/api/embed/9e04a3a7c98aa420b00d5c635bc1e6180a259426.svg "Repobeats analytics image")
