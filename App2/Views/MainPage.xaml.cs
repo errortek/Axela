@@ -15,7 +15,6 @@ namespace App2.Views;
 public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
 {
     private string AxelaText;
-    public string version;
 
     public MainViewModel ViewModel
     {
@@ -26,9 +25,6 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
     {
         ViewModel = App.GetService<MainViewModel>();
         InitializeComponent();
-        System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
-        System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
-        version = fvi.FileVersion!;
     }
 
     private async void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
@@ -115,14 +111,6 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         }
 
         axelabox.Text = string.Empty;
-    }
-
-    public async void UserInit()
-    {
-        string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-
-
-        //text1.Text = "Welcome, " + userName;
     }
 
     public class Result
