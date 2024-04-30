@@ -15,6 +15,7 @@ namespace App2.Views;
 public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
 {
     private string AxelaText;
+    public string version;
 
     public MainViewModel ViewModel
     {
@@ -25,6 +26,9 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
     {
         ViewModel = App.GetService<MainViewModel>();
         InitializeComponent();
+        System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+        System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
+        version = fvi.FileVersion!;
     }
 
     private async void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
@@ -38,6 +42,7 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
     {
         "Hello",
         "Hi",
+        "Hey there",
         "Who is your developer?",
         "Bye",
         "It's my birthday!",
@@ -50,7 +55,8 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         "What day is it right now?",
         "What's the date?",
         "What is the date today?", 
-        "What OS is this computer running?"
+        "What OS is this computer running?",
+        "What Axela version am I running?"
     };
 
     public bool isRequestingWikipedia = false;
@@ -59,9 +65,10 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
     {
         $"Hello, {System.Security.Principal.WindowsIdentity.GetCurrent().Name}! 😊",
         $"Hello, {System.Security.Principal.WindowsIdentity.GetCurrent().Name}! 😊",
+        $"Hello, {System.Security.Principal.WindowsIdentity.GetCurrent().Name}! 😊",
         "My developers are jpbandroid and Ivirius.",
         "Bye! Have a nice day! 😊",
-        "Happy birthday! 😊",
+        "Happy birthday! 😊\nI hope you have a great day!",
         $"The time right now is {DateTime.Now}.",
         "Please input your search query...",
         "I'm good. What about you? 😊",
@@ -71,7 +78,8 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         $"Today is {DateTime.Now.ToString("dddd")}",
         $"The date right now is {DateTime.Now.ToString("dd.M.yyyy")}",
         $"The date right now is {DateTime.Now.ToString("dd.M.yyyy")}",
-        $"This computer is running {Environment.OSVersion}"
+        $"This computer is running {Environment.OSVersion}",
+        $"You are running Axela v11.2405.1.0"
     };
 
     private async Task ProcessSmartAnswer()
