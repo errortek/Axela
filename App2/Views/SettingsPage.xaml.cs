@@ -19,12 +19,6 @@ public sealed partial class SettingsPage : Page
         InitializeComponent();
     }
 
-    private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
-    {
-        SysBackdropTest sysbackdropwindow = new SysBackdropTest();
-        sysbackdropwindow.Show();
-    }
-
     private void CopyVerInfo(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
         var data = new DataPackage
