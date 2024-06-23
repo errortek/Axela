@@ -52,7 +52,9 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         "What's the date?",
         "What is the date today?", 
         "What OS is this computer running?",
-        "What Axela version am I running?"
+        "What Axela version am I running?",
+        "Say something random, for fun",
+        "Tell me a fun fact"
     };
 
     public bool isRequestingWikipedia = false;
@@ -75,7 +77,9 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         $"The date right now is {DateTime.Now.ToString("dd.M.yyyy")}",
         $"The date right now is {DateTime.Now.ToString("dd.M.yyyy")}",
         $"This computer is running {Environment.OSVersion}",
-        $"You are running Axela v11.2406.1.0"
+        $"You are running Axela v11.2406.1.0",
+        $"I can even respond to your questions offline, as I run on-device, not in the cloud",
+        $"Windows XP is actually the longest-supported Windows version, being supported for 18 years (2001-2019) in its various forms, longer than that same metric for Windows 10, which has an ongoing 17 years of support (2015-2032) in its various forms."
     };
 
     private async Task ProcessSmartAnswer()
