@@ -75,7 +75,7 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         $"The date right now is {DateTime.Now.ToString("dd.M.yyyy")}",
         $"The date right now is {DateTime.Now.ToString("dd.M.yyyy")}",
         $"This computer is running {Environment.OSVersion}",
-        $"You are running Axela v11.2405.1.0"
+        $"You are running Axela v11.2406.1.0"
     };
 
     private async Task ProcessSmartAnswer()
