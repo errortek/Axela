@@ -2,6 +2,9 @@
 using System.Net;
 using System.Reflection;
 using App2.ViewModels;
+using Genbox.Wikipedia.Enums;
+using Genbox.Wikipedia.Objects;
+using Genbox.Wikipedia;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Newtonsoft.Json;
@@ -87,8 +90,19 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
         if (isRequestingWikipedia == true)
         {
             var query = axelabox.Text.Replace(" ", "+");
-            var uri = "https://en.wikipedia.org/wiki/Special:Search?go=Go&search=" + query + "&ns0=1";
-            await Launcher.LaunchUriAsync(new Uri(uri));
+            using WikipediaClient client = new WikipediaClient();
+
+            WikiSearchRequest req = new WikiSearchRequest(query);
+            req.Limit = 1; //We would like 5 results
+            req.WhatToSearch = WikiWhat.Text; //We would like to search inside the articles
+
+            WikiSearchResponse resp = await client.SearchAsync(req);
+
+            foreach (SearchResult s in resp.QueryResult.SearchResults)
+            {
+                AxelaResponseText.Text = ($"{s.Title}\n{s.Snippet}");
+            }
+
             isRequestingWikipedia = false;
             return;
         }
