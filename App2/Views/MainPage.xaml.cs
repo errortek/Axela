@@ -93,7 +93,7 @@ public sealed partial class MainPage : Microsoft.UI.Xaml.Controls.Page
             return;
         }
 
-        var similarityIndexer = new F23.StringSimilarity.Levenshtein();
+        var similarityIndexer = new F23.StringSimilarity.Cosine();
         var preferredIndex = 0;
         double maxIndex = 99999;
 
